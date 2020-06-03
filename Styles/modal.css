@@ -12,6 +12,11 @@
 
 }
 
+#modal.hide{
+    display: none;
+    
+}
+
 #modal .content{
     color: white;
 
