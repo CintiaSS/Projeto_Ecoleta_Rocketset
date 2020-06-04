@@ -1,9 +1,12 @@
 {
   "name": "projeto_ecoleta_rocketset",
-    "scripts": {
-    "start": "node src/server.js"
+  "scripts": {
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
