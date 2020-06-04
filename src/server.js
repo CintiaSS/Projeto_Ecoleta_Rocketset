@@ -3,6 +3,9 @@ const server = express()
 
 server.use(express.static("public"))
 
+const nunjuncks = require("nunjucks")
+nunjuncks.configure
+
 server.get("/index", (req, res) => {
     res.sendFile(__dirname + "/views/index.html")
 })
