@@ -1,0 +1,20 @@
+{
+  "name": "Projeto_Ecoleta_Rocketset",
+  "version": "1.0.0",
+  "description": "Projeto do Bootcamp Next Level Week\r Aula 01 - Introdução ás tecnologias\r *JavaScript\r *HTML\r *CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CintiaSS/Projeto_Ecoleta_Rocketset.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CintiaSS/Projeto_Ecoleta_Rocketset/issues"
+  },
+  "homepage": "https://github.com/CintiaSS/Projeto_Ecoleta_Rocketset#readme"
+}
