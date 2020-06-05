@@ -3,19 +3,24 @@ const server = express()
 
 server.use(express.static("public"))
 
-const nunjuncks = require("nunjucks")
-nunjuncks.configure
 
-server.get("/index", (req, res) => {
-    res.sendFile(__dirname + "/views/index.html")
+
+const nunjuncks = require("nunjucks")
+nunjuncks.configure("src/views", {
+  express: server,
+  noCache:true
+  })  
+
+server.get("/", (req, res) => {
+    return res.render("index.html", { title: "um titulo"})
 })
 
 server.get("/create-point", (req, res) => {
-    res.sendFile(__dirname + "/views/create-point.html")
+    return res.render("create-point.html")
 })
 
-server.get("/search-results", (req, res) => {
-  res.sendFile(__dirname + "/views/search-results.html")
+server.get("/search", (req, res) => {
+  return res.render("search-results.html")
 })
 
 
