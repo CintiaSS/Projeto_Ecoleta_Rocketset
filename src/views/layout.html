@@ -8,30 +8,26 @@
         {% block title%}
             <title>Ecoleta</title>
         {% endblock title %}
-        
-        
-
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="/styles/main.css">
 
         {% block styles%}
+            <link rel="stylesheet" href="/styles/responsive.css">
+            <link rel="stylesheet" href="/styles/main.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
         {% endblock styles%}
-
-        <link rel="stylesheet" href="/styles/responsive.css">
 
     </head>
 
     <body>
 
-        <div id="page-home">
+        {% block content %}
+            <div id="{{ bodyId }}"></div>
+        {% endblock content %}
 
+        {% block modal %}
+        {% endblock modal %}
 
-
-           
-        </div>
-
-     
+        {% block scripts %}
+        {% endblock scripts %}
         
     </body>
 </html>
